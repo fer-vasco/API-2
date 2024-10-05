@@ -1,9 +1,7 @@
 import streamlit as st
-import random
+from datetime import datetime
 
-num_aleatorio = random.randint(0,9)
+corrida = datetime.now()
 
-st.title('Hello, World!')
-st.write('Welcome to my Streamlit app!')
-st.write(num_aleatorio)
-
+st.title('Resultados')
+st.write(f'Datos actualizados el {corrida}')
